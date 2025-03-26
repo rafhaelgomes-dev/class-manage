@@ -14,9 +14,17 @@ Interface intuitiva e responsiva.
 
 # Tecnologias Utilizadas
 
-Java
-MySQL
+Java <br>
+MySQL 
 
 # System Design
 
 https://miro.com/app/board/uXjVIXV4veo=/
+
+# Integrantes 
+
+Jonny Kaio Paes Alves <br>
+Haniel Silva Santos <br>
+Rafhael Rocha Gomes <br>
+André de Souza Ribeiro Filho <br>
+Breno Farias Prado 
