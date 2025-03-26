@@ -1,4 +1,4 @@
-# faculdade
+# FACULDADE
 
 # Visão Geral
 
@@ -12,7 +12,7 @@ Controle de frequência dos alunos.
 Exportação de dados para planilhas.
 Interface intuitiva e responsiva.
 
-#Tecnologias Utilizadas
+# Tecnologias Utilizadas
 
 Java
 MySQL
