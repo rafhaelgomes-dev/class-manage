@@ -1,4 +1,4 @@
-package org.app.classmanage;
+package com.ads.projetoa3.app;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;

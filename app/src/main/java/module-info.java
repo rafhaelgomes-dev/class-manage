@@ -1,4 +1,4 @@
-module org.example.classmanage {
+module com.ads.projetoa3.app {
     requires javafx.controls;
     requires javafx.fxml;
     requires javafx.web;
@@ -11,6 +11,6 @@ module org.example.classmanage {
     requires eu.hansolo.tilesfx;
     requires com.almasb.fxgl.all;
 
-    opens org.app.classmanage to javafx.fxml;
-    exports org.app.classmanage;
+    opens com.ads.projetoa3.app to javafx.fxml;
+    exports com.ads.projetoa3.app;
 }
