@@ -13,4 +13,5 @@ module com.ads.projetoa3.app {
 
     opens com.ads.projetoa3.app to javafx.fxml;
     exports com.ads.projetoa3.app;
+    exports com.ads.projetoa3.app.enums;
 }
