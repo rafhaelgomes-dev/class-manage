@@ -1,5 +1,4 @@
 package org.app.classmanage;
-
 import org.app.classmanage.enums.EnumTipoUsuario;
 
 public class Usuario {
