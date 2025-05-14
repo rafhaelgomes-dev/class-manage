@@ -11,6 +11,6 @@ module org.example.classmanage {
     requires eu.hansolo.tilesfx;
     requires com.almasb.fxgl.all;
 
-    opens org.example.classmanage to javafx.fxml;
-    exports org.example.classmanage;
+    opens org.app.classmanage to javafx.fxml;
+    exports org.app.classmanage;
 }

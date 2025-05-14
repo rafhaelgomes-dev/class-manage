@@ -1,4 +1,4 @@
-package org.example.classmanage;
+package org.app.classmanage;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
