@@ -1,9 +1,12 @@
 package org.app.classmanage;
 
+import org.app.classmanage.enums.EnumTipoUsuario;
+
 public class Usuario {
     private String _nome;
     private String _ra;
     private String _senha;
+    private EnumTipoUsuario _tipoUsuario;
 
     public Usuario(String nome, String senha, String ra) {
         this._nome = nome;
@@ -15,7 +18,11 @@ public class Usuario {
         return this._nome;
     }
 
-    public boolean validarSenha(String senha) {
-        return this._senha.equals(senha);
+    public EnumTipoUsuario getTipoUsuario() {
+        return this._tipoUsuario;
+    }
+
+    public String getRa() {
+        return this._ra;
     }
 }
