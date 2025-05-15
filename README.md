@@ -28,4 +28,5 @@ Haniel Silva Santos <br>
 Rafhael Rocha Gomes <br>
 André de Souza Ribeiro Filho <br>
 Breno Farias Prado <br>
-
+Lucas Souza Rodrigues <br>
+Alisson Flavio <br>
