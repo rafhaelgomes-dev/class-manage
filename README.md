@@ -2,7 +2,7 @@
 
 # Visão Geral
 
-Este é mais um software desenvolvido a auxiliar professores no gerenciamento de notas e frequência de alunos. Ele permite cadastrar turmas, adicionar alunos, registrar presenças e atribuir notas de forma eficiente e organizada. Ademais, o sistema ainda poderá ser acessado pelo aluno, permitindo que o próprio possa visualizar as suas notas e frequência. 
+Este é um software desenvolvido a auxiliar professores no gerenciamento de notas e frequência de alunos. Ele permite cadastrar turmas, adicionar alunos, registrar presenças e atribuir notas de forma eficiente e organizada. Ademais, o sistema ainda poderá ser acessado pelo aluno, permitindo que o próprio possa visualizar as suas notas e frequência. 
 
 # Funcionalidades
 
