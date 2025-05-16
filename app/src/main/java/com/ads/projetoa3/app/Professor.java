@@ -7,11 +7,11 @@ public class Professor extends Usuario {
        super(nome, email, EnumTipoUsuario.PROFESSOR);
    }
 
-   public void darFalta(Aluno aluno, int qtde, String materia){
+   public void adicionarFaltaAluno(Aluno aluno, int qtde, String materia){
        aluno.adicionarFalta(qtde, materia);
    }
 
-   public void darNota(Aluno aluno, double nota, String material) {
-       aluno.adicionarNota.(nota, material);
+   public void adicionarNotaAluno(Aluno aluno, double nota, String materia) {
+       aluno.adicionarNota(nota, materia);
    }
 }

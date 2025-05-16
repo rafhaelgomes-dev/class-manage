@@ -22,7 +22,7 @@ public class Usuario {
         return this._tipoUsuario;
     }
 
-    public String registroAcademico() {
+    public String getEmail() {
         return this._email;
     }
 }
