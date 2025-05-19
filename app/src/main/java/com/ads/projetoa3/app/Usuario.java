@@ -3,8 +3,8 @@ package com.ads.projetoa3.app;
 import com.ads.projetoa3.app.enums.EnumTipoUsuario;
 
 public class Usuario {
-    private String _nome;
-    private String _email;
+    protected String _nome;
+    protected String _email;
 
     private EnumTipoUsuario _tipoUsuario;
 

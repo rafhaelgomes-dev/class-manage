@@ -5,8 +5,6 @@ import com.ads.projetoa3.app.enums.EnumTipoUsuario;
 import java.util.ArrayList;
 
 public class Aluno extends Usuario {
-    private String _nome;
-    private String _email;
     private String _matricula;
     private String _curso;
     private ArrayList<Falta> _faltas = new ArrayList<>();
@@ -14,8 +12,6 @@ public class Aluno extends Usuario {
 
     public Aluno(String nome, String email, String matricula, String curso) {
         super(nome, email, EnumTipoUsuario.ALUNO);
-        this._nome = nome;
-        this._email = email;
         this._matricula = matricula;
         this._curso = curso;
     }
