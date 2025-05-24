@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.171"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.ads.projetoa3.app.controllers.ListagemAlunos">
+
+    <TableView fx:id="tableViewAlunos" AnchorPane.topAnchor="0" AnchorPane.rightAnchor="0"
+               AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0">
+        <columns>
+            <!-- Coluna Nome -->
+            <TableColumn text="Nome" prefWidth="150">
+                <cellValueFactory>
+                    <PropertyValueFactory property="nome"/>
+                </cellValueFactory>
+            </TableColumn>
+
+            <!-- Coluna Email -->
+            <TableColumn text="Email" prefWidth="200">
+                <cellValueFactory>
+                    <PropertyValueFactory property="email"/>
+                </cellValueFactory>
+            </TableColumn>
+
+            <!-- Coluna Matrícula -->
+            <TableColumn text="Matrícula" prefWidth="100">
+                <cellValueFactory>
+                    <PropertyValueFactory property="matricula"/>
+                </cellValueFactory>
+            </TableColumn>
+
+            <!-- Coluna Curso -->
+            <TableColumn text="Curso" prefWidth="150">
+                <cellValueFactory>
+                    <PropertyValueFactory property="curso"/>
+                </cellValueFactory>
+            </TableColumn>
+        </columns>
+    </TableView>
+</AnchorPane>

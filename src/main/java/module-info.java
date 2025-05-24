@@ -12,6 +12,7 @@ module com.ads.projetoa3.app {
     requires com.almasb.fxgl.all;
 
     opens com.ads.projetoa3.app to javafx.fxml;
+    opens com.ads.projetoa3.app.models to javafx.base;
     exports com.ads.projetoa3.app;
     exports com.ads.projetoa3.app.enums;
     exports com.ads.projetoa3.app.controllers;
