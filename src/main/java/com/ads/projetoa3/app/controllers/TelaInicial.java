@@ -1,0 +1,51 @@
+package com.ads.projetoa3.app.controllers;
+
+import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.stage.Stage;
+import java.io.IOException;
+
+
+public class TelaInicial {
+    @FXML
+    private Button btnCadastrarAluno;
+
+    @FXML
+    private Button btnListarAluno;
+
+    @FXML
+    protected void cadastrarAluno(){
+        try {
+            Parent root = FXMLLoader.load(getClass().getResource("/com/ads/projetoa3/app/cadastro-aluno.fxml"));
+
+            Stage novaJanela = new Stage();
+            novaJanela.setTitle("Cadastro de Alunos");
+            novaJanela.setScene(new Scene(root));
+
+            novaJanela.initOwner(btnCadastrarAluno.getScene().getWindow());
+
+            novaJanela.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+    @FXML
+    protected void listarAluno(){
+        try {
+            Parent root = FXMLLoader.load(getClass().getResource("/com/ads/projetoa3/app/listagem-alunos.fxml"));
+
+            Stage novaJanela = new Stage();
+            novaJanela.setTitle("Listagem de Alunos");
+            novaJanela.setScene(new Scene(root));
+
+            novaJanela.initOwner(btnListarAluno.getScene().getWindow());
+
+            novaJanela.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+}
