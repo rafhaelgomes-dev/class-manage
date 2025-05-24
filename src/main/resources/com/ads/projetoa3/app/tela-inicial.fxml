@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.shape.Rectangle?>
+
+<AnchorPane prefHeight="550.0" prefWidth="700.0" style="-fx-background-color: linear-gradient(to bottom right, #f5f7fa, #c3cfe2);" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ads.projetoa3.app.TelaInicial">
+    <children>
+        <!-- Background decoration -->
+        <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#ffffff" height="450.0" layoutX="150.0" layoutY="50.0" stroke="#e0e0e0" strokeType="INSIDE" strokeWidth="1.0" width="400.0" />
+
+        <!-- Main container -->
+        <VBox alignment="CENTER" layoutX="150.0" layoutY="50.0" prefHeight="450.0" prefWidth="400.0" spacing="20.0">
+            <padding>
+                <Insets bottom="40.0" left="40.0" right="40.0" top="40.0" />
+            </padding>
+
+            <!-- Title -->
+            <Label text="Sistema Acadêmico" textFill="#2c3e50">
+                <font>
+                    <Font name="Segoe UI Bold" size="28.0" />
+                </font>
+                <effect>
+                    <DropShadow color="rgba(0,0,0,0.1)" radius="3.0" />
+                </effect>
+            </Label>
+
+            <Separator prefWidth="300.0" style="-fx-background-color: #e0e0e0;" />
+
+            <!-- Buttons container -->
+            <VBox alignment="CENTER" spacing="10.0" style="-fx-background-color: transparent;">
+                <Button maxWidth="Infinity" minWidth="300.0" mnemonicParsing="false" prefHeight="40.0" style="-fx-background-color: #3498db, linear-gradient(#3498db, #2980b9); -fx-background-radius: 5; -fx-background-insets: 0; -fx-text-fill: white; -fx-font-weight: bold;" text="Cadastrar Aluno" />
+
+                <Button maxWidth="Infinity" minWidth="300.0" mnemonicParsing="false" prefHeight="40.0" style="-fx-background-color: #3498db, linear-gradient(#3498db, #2980b9); -fx-background-radius: 5; -fx-background-insets: 0; -fx-text-fill: white; -fx-font-weight: bold;" text="Cadastrar Professor" />
+
+                <Button maxWidth="Infinity" minWidth="300.0" mnemonicParsing="false" prefHeight="40.0" style="-fx-background-color: #3498db, linear-gradient(#3498db, #2980b9); -fx-background-radius: 5; -fx-background-insets: 0; -fx-text-fill: white; -fx-font-weight: bold;" text="Listar Usuários" />
+
+                <Button maxWidth="Infinity" minWidth="300.0" mnemonicParsing="false" prefHeight="40.0" style="-fx-background-color: #3498db, linear-gradient(#3498db, #2980b9); -fx-background-radius: 5; -fx-background-insets: 0; -fx-text-fill: white; -fx-font-weight: bold;" text="Adicionar Nota/Falta" />
+
+                <Button maxWidth="Infinity" minWidth="300.0" mnemonicParsing="false" prefHeight="40.0" style="-fx-background-color: #3498db, linear-gradient(#3498db, #2980b9); -fx-background-radius: 5; -fx-background-insets: 0; -fx-text-fill: white; -fx-font-weight: bold;" text="Turmas" />
+            </VBox>
+        </VBox>
+    </children>
+</AnchorPane>
