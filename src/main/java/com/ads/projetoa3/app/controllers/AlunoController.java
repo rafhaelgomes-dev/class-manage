@@ -45,6 +45,11 @@ public class AlunoController {
         alert.setHeaderText(null);
         alert.setContentText("Aluno salvo com sucesso!");
         alert.showAndWait();
+
+        this.nome.setText("");
+        this.email.setText("");
+        this.matricula.setText("");
+        this.curso.setText("");
     }
 
 
