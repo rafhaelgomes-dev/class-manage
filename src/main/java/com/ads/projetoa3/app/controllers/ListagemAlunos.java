@@ -13,8 +13,6 @@ import java.util.ArrayList;
 import java.util.ResourceBundle;
 
 public class ListagemAlunos implements Initializable {
-
-
     @FXML
     private TableView<Aluno> tableViewAlunos;
 

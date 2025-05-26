@@ -8,7 +8,6 @@ import javafx.scene.control.Button;
 import javafx.stage.Stage;
 import java.io.IOException;
 
-
 public class TelaInicial {
     @FXML
     private Button btnCadastrarAluno;
@@ -17,7 +16,7 @@ public class TelaInicial {
     private Button btnListarAluno;
 
     @FXML
-    protected void cadastrarAluno(){
+    protected void cadastrarAluno() {
         try {
             Parent root = FXMLLoader.load(getClass().getResource("/com/ads/projetoa3/app/cadastro-aluno.fxml"));
 
@@ -33,7 +32,7 @@ public class TelaInicial {
         }
     }
     @FXML
-    protected void listarAluno(){
+    protected void listarAluno() {
         try {
             Parent root = FXMLLoader.load(getClass().getResource("/com/ads/projetoa3/app/listagem-alunos.fxml"));
 
