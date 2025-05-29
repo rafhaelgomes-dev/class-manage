@@ -11,7 +11,7 @@ import javafx.stage.Stage;
 
 import java.util.ArrayList;
 
-import static com.ads.projetoa3.app.controllers.FormUtils.limparrCampos;
+import static com.ads.projetoa3.app.controllers.FormUtils.limparCampos;
 
 
 public class AlunoController {
@@ -65,7 +65,7 @@ public class AlunoController {
         alert.setContentText("Todos os dados não salvos serão perdidos.");
 
         if (alert.showAndWait().get() == ButtonType.OK) {
-            limparrCampos(nome, matricula, email, curso);
+            limparCampos(nome, matricula, email, curso);
             Stage stage = (Stage) nome.getScene().getWindow();
             stage.close();
         }

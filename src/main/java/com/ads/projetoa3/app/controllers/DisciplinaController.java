@@ -9,8 +9,7 @@ import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import java.util.ArrayList;
 import java.util.Optional;
-
-import static com.ads.projetoa3.app.controllers.FormUtils.limparrCampos;
+import static com.ads.projetoa3.app.controllers.FormUtils.limparCampos;
 
 public class DisciplinaController {
     @FXML
@@ -61,7 +60,7 @@ public class DisciplinaController {
         alert.setContentText("Todos os dados não salvos serão perdidos.");
 
         if (alert.showAndWait().get() == ButtonType.OK) {
-            limparrCampos(nomeDisciplina, codigo, cargaHoraria, descricao);
+            limparCampos(nomeDisciplina, codigo, cargaHoraria, descricao);
             Stage stage = (Stage) nomeDisciplina.getScene().getWindow();
             stage.close();
         }
@@ -76,13 +75,6 @@ public class DisciplinaController {
             mostrarAlertaErro("Nenhuma disiplina encontrada.");
             return;
         }
-    }
-
-    private void limparCampos() {
-        nomeDisciplina.clear();
-        codigo.clear();
-        cargaHoraria.clear();
-        descricao.clear();
     }
 
     private void mostrarAlertaErro(String mensagem) {
