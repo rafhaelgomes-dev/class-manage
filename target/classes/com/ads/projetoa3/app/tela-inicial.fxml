@@ -10,22 +10,13 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="550.0" prefWidth="700.0"
-            style="-fx-background-color: linear-gradient(to bottom right, #f5f7fa, #c3cfe2);"
-            xmlns="http://javafx.com/javafx/23.0.1"
-            xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="com.ads.projetoa3.app.controllers.TelaInicial">
+<AnchorPane prefHeight="550.0" prefWidth="700.0" style="-fx-background-color: linear-gradient(to bottom right, #f5f7fa, #c3cfe2);" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ads.projetoa3.app.controllers.TelaInicial">
 
 
-    <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#ffffff"
-               AnchorPane.topAnchor="50.0" AnchorPane.bottomAnchor="50.0"
-               AnchorPane.leftAnchor="150.0" AnchorPane.rightAnchor="150.0"
-               stroke="#e0e0e0" strokeType="INSIDE" strokeWidth="1.0"/>
+    <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#ffffff" stroke="#e0e0e0" strokeType="INSIDE" strokeWidth="1.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="150.0" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="50.0" />
 
 
-    <VBox alignment="CENTER" spacing="20.0"
-          AnchorPane.topAnchor="50.0" AnchorPane.bottomAnchor="50.0"
-          AnchorPane.leftAnchor="150.0" AnchorPane.rightAnchor="150.0">
+    <VBox alignment="CENTER" spacing="20.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="150.0" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="50.0">
 
         <padding>
             <Insets bottom="40.0" left="40.0" right="40.0" top="40.0" />
@@ -45,30 +36,16 @@
 
 
         <VBox alignment="CENTER" spacing="10.0" style="-fx-background-color: transparent;">
-            <Button fx:id="btnCadastrarAluno" maxWidth="Infinity" minWidth="300.0"
-                    mnemonicParsing="false" onAction="#cadastrarAluno" prefHeight="40.0"
-                    style="-fx-background-color: #3498db, linear-gradient(#3498db, #2980b9); -fx-background-radius: 5; -fx-background-insets: 0; -fx-text-fill: white; -fx-font-weight: bold;"
-                    text="Cadastrar Aluno" />
+            <Button fx:id="btnCadastrarAluno" maxWidth="Infinity" minWidth="300.0" mnemonicParsing="false" onAction="#cadastrarAluno" prefHeight="40.0" style="-fx-background-color: #3498db, linear-gradient(#3498db, #2980b9); -fx-background-radius: 5; -fx-background-insets: 0; -fx-text-fill: white; -fx-font-weight: bold;" text="Cadastrar Aluno" />
 
-            <Button fx:id="btnListarAluno" maxWidth="Infinity" minWidth="300.0"
-                    mnemonicParsing="false" onAction="#listarAluno" prefHeight="40.0"
-                    style="-fx-background-color: #3498db, linear-gradient(#3498db, #2980b9); -fx-background-radius: 5; -fx-background-insets: 0; -fx-text-fill: white; -fx-font-weight: bold;"
-                    text="Listar Alunos" />
+            <Button fx:id="btnListarAluno" maxWidth="Infinity" minWidth="300.0" mnemonicParsing="false" onAction="#listarAluno" prefHeight="40.0" style="-fx-background-color: #3498db, linear-gradient(#3498db, #2980b9); -fx-background-radius: 5; -fx-background-insets: 0; -fx-text-fill: white; -fx-font-weight: bold;" text="Listar Alunos" />
+         <Button fx:id="btnCadastrarDisciplina" layoutX="10.0" layoutY="60.0" maxWidth="Infinity" minWidth="300.0" mnemonicParsing="false" onAction="#cadastrarDisciplina" prefHeight="40.0" style="-fx-background-color: #3498db, linear-gradient(#3498db, #2980b9); -fx-background-radius: 5; -fx-background-insets: 0; -fx-text-fill: white; -fx-font-weight: bold;" text="Cadastrar Disciplina" />
 
-            <Button maxWidth="Infinity" minWidth="300.0" mnemonicParsing="false"
-                    prefHeight="40.0"
-                    style="-fx-background-color: #3498db, linear-gradient(#3498db, #2980b9); -fx-background-radius: 5; -fx-background-insets: 0; -fx-text-fill: white; -fx-font-weight: bold;"
-                    text="Cadastrar Professor" />
+            <Button maxWidth="Infinity" minWidth="300.0" mnemonicParsing="false" prefHeight="40.0" style="-fx-background-color: #3498db, linear-gradient(#3498db, #2980b9); -fx-background-radius: 5; -fx-background-insets: 0; -fx-text-fill: white; -fx-font-weight: bold;" text="Cadastrar Professor" />
 
-            <Button maxWidth="Infinity" minWidth="300.0" mnemonicParsing="false"
-                    prefHeight="40.0"
-                    style="-fx-background-color: #3498db, linear-gradient(#3498db, #2980b9); -fx-background-radius: 5; -fx-background-insets: 0; -fx-text-fill: white; -fx-font-weight: bold;"
-                    text="Adicionar Nota/Falta" />
+            <Button maxWidth="Infinity" minWidth="300.0" mnemonicParsing="false" prefHeight="40.0" style="-fx-background-color: #3498db, linear-gradient(#3498db, #2980b9); -fx-background-radius: 5; -fx-background-insets: 0; -fx-text-fill: white; -fx-font-weight: bold;" text="Adicionar Nota/Falta" />
 
-            <Button maxWidth="Infinity" minWidth="300.0" mnemonicParsing="false"
-                    prefHeight="40.0"
-                    style="-fx-background-color: #3498db, linear-gradient(#3498db, #2980b9); -fx-background-radius: 5; -fx-background-insets: 0; -fx-text-fill: white; -fx-font-weight: bold;"
-                    text="Turmas" />
+            <Button maxWidth="Infinity" minWidth="300.0" mnemonicParsing="false" prefHeight="40.0" style="-fx-background-color: #3498db, linear-gradient(#3498db, #2980b9); -fx-background-radius: 5; -fx-background-insets: 0; -fx-text-fill: white; -fx-font-weight: bold;" text="Turmas" />
         </VBox>
     </VBox>
 </AnchorPane>

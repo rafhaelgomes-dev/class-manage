@@ -16,6 +16,9 @@ public class TelaInicial {
     private Button btnListarAluno;
 
     @FXML
+    private Button btnCadastrarDisciplina;
+
+    @FXML
     protected void cadastrarAluno() {
         try {
             Parent root = FXMLLoader.load(getClass().getResource("/com/ads/projetoa3/app/cadastro-aluno.fxml"));
@@ -41,6 +44,22 @@ public class TelaInicial {
             novaJanela.setScene(new Scene(root));
 
             novaJanela.initOwner(btnListarAluno.getScene().getWindow());
+
+            novaJanela.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+    @FXML
+    protected void cadastrarDisciplina() {
+        try {
+            Parent root = FXMLLoader.load(getClass().getResource("/com/ads/projetoa3/app/cadastro-disciplina.fxml"));
+
+            Stage novaJanela = new Stage();
+            novaJanela.setTitle("Cadastro de Disciplinas");
+            novaJanela.setScene(new Scene(root));
+
+            novaJanela.initOwner(btnCadastrarDisciplina.getScene().getWindow());
 
             novaJanela.show();
         } catch (IOException e) {
