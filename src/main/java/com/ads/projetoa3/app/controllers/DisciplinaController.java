@@ -7,9 +7,10 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.ButtonType;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
-
 import java.util.ArrayList;
 import java.util.Optional;
+
+import static com.ads.projetoa3.app.controllers.FormUtils.limparrCampos;
 
 public class DisciplinaController {
     @FXML
@@ -60,7 +61,7 @@ public class DisciplinaController {
         alert.setContentText("Todos os dados não salvos serão perdidos.");
 
         if (alert.showAndWait().get() == ButtonType.OK) {
-            limparCampos();
+            limparrCampos(nomeDisciplina, codigo, cargaHoraria, descricao);
             Stage stage = (Stage) nomeDisciplina.getScene().getWindow();
             stage.close();
         }

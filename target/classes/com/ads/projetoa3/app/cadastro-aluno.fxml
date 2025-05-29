@@ -70,7 +70,7 @@
                 </VBox>
             </children>
         </VBox>
-      <Button layoutX="219.0" layoutY="459.0" mnemonicParsing="false" onAction="#salveAluno" text="Salvar" />
-      <Button layoutX="334.0" layoutY="459.0" mnemonicParsing="false" text="Cancelar" />
+      <Button defaultButton="true" layoutX="219.0" layoutY="459.0" mnemonicParsing="false" onAction="#salveAluno" text="Salvar" />
+      <Button cancelButton="true" layoutX="334.0" layoutY="459.0" mnemonicParsing="false" onAction="#cancelAluno" text="Cancelar" />
     </children>
 </AnchorPane>

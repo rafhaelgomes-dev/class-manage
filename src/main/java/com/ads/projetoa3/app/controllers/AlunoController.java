@@ -5,8 +5,13 @@ import com.ads.projetoa3.app.models.Aluno;
 import com.ads.projetoa3.app.repositories.AlunoRepository;
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
+import javafx.scene.control.ButtonType;
 import javafx.scene.control.TextField;
+import javafx.stage.Stage;
+
 import java.util.ArrayList;
+
+import static com.ads.projetoa3.app.controllers.FormUtils.limparrCampos;
 
 
 public class AlunoController {
@@ -52,6 +57,19 @@ public class AlunoController {
         this.curso.setText("");
     }
 
+    @FXML
+    private void cancelAluno() {
+        Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
+        alert.setTitle("Confirmação");
+        alert.setHeaderText("Deseja cancelar?");
+        alert.setContentText("Todos os dados não salvos serão perdidos.");
+
+        if (alert.showAndWait().get() == ButtonType.OK) {
+            limparrCampos(nome, matricula, email, curso);
+            Stage stage = (Stage) nome.getScene().getWindow();
+            stage.close();
+        }
+    }
 
 
     @FXML
@@ -71,4 +89,5 @@ public class AlunoController {
         alert.setContentText(mensagem);
         alert.showAndWait();
     }
+
 }
