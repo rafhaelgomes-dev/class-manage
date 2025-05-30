@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="526.0" prefWidth="600.0" style="-fx-background-color: #f5f5f5;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ads.projetoa3.app.controllers.ProfessorController">
+    <children>
+        <VBox alignment="CENTER" layoutX="150.0" layoutY="30.0" spacing="20.0">
+            <children>
+                <Label text="Cadastro de Professor" textAlignment="CENTER">
+                    <font>
+                        <Font name="Segoe UI Bold" size="28.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets bottom="10.0" />
+                    </VBox.margin>
+                </Label>
+
+                <VBox alignment="CENTER_LEFT" spacing="15.0" style="-fx-background-color: white; -fx-background-radius: 10; -fx-padding: 25; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 5, 0, 0, 0);">
+                    <children>
+                        <VBox spacing="5.0">
+                            <children>
+                                <Label style="-fx-text-fill: #555;" text="Nome">
+                                    <font>
+                                        <Font name="Segoe UI Semibold" size="14.0" />
+                                    </font>
+                                </Label>
+                                <TextField id="nome-professor" fx:id="professorNome" prefHeight="35.0" prefWidth="250.0" style="-fx-background-radius: 5; -fx-border-radius: 5; -fx-border-color: #ddd; -fx-border-width: 1;" />
+                            </children>
+                        </VBox>
+
+                        <VBox spacing="5.0">
+                            <children>
+                                <Label style="-fx-text-fill: #555;" text="Email">
+                                    <font>
+                                        <Font name="Segoe UI Semibold" size="14.0" />
+                                    </font>
+                                </Label>
+                                <TextField id="email-professor" fx:id="professorEmail" prefHeight="35.0" prefWidth="250.0" style="-fx-background-radius: 5; -fx-border-radius: 5; -fx-border-color: #ddd; -fx-border-width: 1;" />
+                            </children>
+                        </VBox>
+
+                        <VBox spacing="5.0">
+                            <children>
+                                <Label style="-fx-text-fill: #555;" text="Senha">
+                                    <font>
+                                        <Font name="Segoe UI Semibold" size="14.0" />
+                                    </font>
+                                </Label>
+                        <PasswordField fx:id="senha" prefHeight="34.0" prefWidth="250.0" />
+                            </children>
+                        </VBox>
+
+                        <VBox spacing="5.0">
+                            <children>
+                                <Label style="-fx-text-fill: #555;" text="Disciplina">
+                                    <font>
+                                        <Font name="Segoe UI Semibold" size="14.0" />
+                                    </font>
+                                </Label>
+                                <TextField fx:id="disciplina" prefHeight="35.0" prefWidth="250.0" style="-fx-background-radius: 5; -fx-border-radius: 5; -fx-border-color: #ddd; -fx-border-width: 1;" />
+                            </children>
+                        </VBox>
+                    </children>
+                </VBox>
+            </children>
+        </VBox>
+        <Button defaultButton="true" layoutX="219.0" layoutY="459.0" mnemonicParsing="false" onAction="#salveProfessor" text="Salvar" />
+        <Button cancelButton="true" layoutX="334.0" layoutY="459.0" mnemonicParsing="false" onAction="#cancelProfessor" text="Cancelar" />
+    </children>
+</AnchorPane>

@@ -2,7 +2,8 @@ package com.ads.projetoa3.app.models;
 
 import com.ads.projetoa3.app.enums.EnumTipoUsuario;
 
-public class Usuario {
+public class
+Usuario {
     protected String _nome;
     protected String _email;
 
