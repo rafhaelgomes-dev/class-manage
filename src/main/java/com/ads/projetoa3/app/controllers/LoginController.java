@@ -46,6 +46,7 @@ public class LoginController {
             Parent root = FXMLLoader.load(getClass().getResource("/com/ads/projetoa3/app/tela-inicial.fxml"));
 
             Stage novaJanela = new Stage();
+            novaJanela.setMaximized(true);
             novaJanela.setTitle("Inicio");
             novaJanela.setScene(new Scene(root));
             novaJanela.show();

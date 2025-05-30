@@ -14,8 +14,6 @@ public class HelloApplication extends Application {
         Scene scene = new Scene(fxmlLoader.load(), 320, 240);
         stage.setTitle("Class Manegment");
         stage.setScene(scene);
-        stage.setMaximized(true);
-
         stage.show();
     }
 
