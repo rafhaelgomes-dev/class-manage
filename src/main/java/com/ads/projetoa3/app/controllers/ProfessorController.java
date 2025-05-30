@@ -4,8 +4,13 @@ import com.ads.projetoa3.app.models.Professor;
 import com.ads.projetoa3.app.repositories.ProfessorRepository;
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
+import javafx.scene.control.ButtonType;
 import javafx.scene.control.TextField;
+import javafx.stage.Stage;
+
 import java.util.ArrayList;
+
+import static com.ads.projetoa3.app.controllers.FormUtils.limparCampos;
 
 public class ProfessorController {
     @FXML
@@ -62,5 +67,19 @@ public class ProfessorController {
         alert.setHeaderText(null);
         alert.setContentText(mensagem);
         alert.showAndWait();
+    }
+    @FXML
+    private void cancelProfessor() {
+        Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
+        alert.setTitle("Confirmação");
+        alert.setHeaderText("Deseja cancelar?");
+        alert.setContentText("Todos os dados não salvos serão perdidos.");
+
+        if (alert.showAndWait().get() == ButtonType.OK) {
+            limparCampos(professorNome, professorEmail, senha, disciplina);
+            Stage stage = (Stage) professorNome.getScene().getWindow();
+            stage.close();
+        }
+
     }
 }

@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="526.0" prefWidth="600.0" style="-fx-background-color: #f5f5f5;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ads.projetoa3.app.controllers.AlunoController">
+<AnchorPane prefHeight="526.0" prefWidth="600.0" style="-fx-background-color: #f5f5f5;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ads.projetoa3.app.controllers.ProfessorController">
     <children>
         <VBox alignment="CENTER" layoutX="150.0" layoutY="30.0" spacing="20.0">
             <children>
@@ -71,7 +71,7 @@
                 </VBox>
             </children>
         </VBox>
-        <Button layoutX="219.0" layoutY="459.0" mnemonicParsing="false" onAction="#salveAluno" text="Salvar" />
-        <Button layoutX="334.0" layoutY="459.0" mnemonicParsing="false" text="Cancelar" />
+        <Button defaultButton="true" layoutX="219.0" layoutY="459.0" mnemonicParsing="false" onAction="#salveProfessor" text="Salvar" />
+        <Button cancelButton="true" layoutX="334.0" layoutY="459.0" mnemonicParsing="false" onAction="#cancelProfessor" text="Cancelar" />
     </children>
 </AnchorPane>
