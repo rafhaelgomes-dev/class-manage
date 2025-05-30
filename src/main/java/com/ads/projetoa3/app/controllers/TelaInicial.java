@@ -27,6 +27,7 @@ public class TelaInicial {
             Parent root = FXMLLoader.load(getClass().getResource("/com/ads/projetoa3/app/cadastro-aluno.fxml"));
 
             Stage novaJanela = new Stage();
+            Scene scene = new Scene(root, 600, 400); // 600x400 pixels
             novaJanela.setTitle("Cadastro de Alunos");
             novaJanela.setScene(new Scene(root));
 
