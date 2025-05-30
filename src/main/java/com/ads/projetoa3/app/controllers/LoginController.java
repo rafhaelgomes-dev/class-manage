@@ -16,23 +16,22 @@ import java.util.regex.Pattern;
 
 public class LoginController {
     @FXML
-    private TextField emailLoginl;
+    private TextField emailLogin;
 
     @FXML
     private TextField senhaLogin;
 
     @FXML
-    private Button entrarLogin;
-
-    @FXML
     public void login() {
-        String email = this.emailLoginl.getText();
+        String email = this.emailLogin.getText();
         String senha = this.senhaLogin.getText();
 
         boolean validar = this.validate(email, senha);
         if (!validar) return;
 
         Professor professor = LoginRepository.login(email, senha);
+
+        System.out.print(professor);
 
         if (professor == null) {
             MostrarAlerta.mostrarAlertaErro("Email ou senha inválido!");
@@ -44,14 +43,14 @@ public class LoginController {
     @FXML
     public void telaIncial() {
         try {
-            Parent root = FXMLLoader.load(getClass().getResource("/com/ads/projetoa3/app/tela-incial.fxml"));
+            Parent root = FXMLLoader.load(getClass().getResource("/com/ads/projetoa3/app/tela-inicial.fxml"));
 
             Stage novaJanela = new Stage();
             novaJanela.setTitle("Inicio");
             novaJanela.setScene(new Scene(root));
             novaJanela.show();
 
-            Stage janelaAtual = (Stage) entrarLogin.getScene().getWindow();
+            Stage janelaAtual = (Stage) emailLogin.getScene().getWindow();
             janelaAtual.close();
         } catch (Exception e) {
             throw new RuntimeException(e);
