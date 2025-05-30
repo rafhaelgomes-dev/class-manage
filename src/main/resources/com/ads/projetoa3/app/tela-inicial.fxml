@@ -41,7 +41,7 @@
             <Button fx:id="btnListarAluno" maxWidth="Infinity" minWidth="300.0" mnemonicParsing="false" onAction="#listarAluno" prefHeight="40.0" style="-fx-background-color: #3498db, linear-gradient(#3498db, #2980b9); -fx-background-radius: 5; -fx-background-insets: 0; -fx-text-fill: white; -fx-font-weight: bold;" text="Listar Alunos" />
          <Button fx:id="btnCadastrarDisciplina" layoutX="10.0" layoutY="60.0" maxWidth="Infinity" minWidth="300.0" mnemonicParsing="false" onAction="#cadastrarDisciplina" prefHeight="40.0" style="-fx-background-color: #3498db, linear-gradient(#3498db, #2980b9); -fx-background-radius: 5; -fx-background-insets: 0; -fx-text-fill: white; -fx-font-weight: bold;" text="Cadastrar Disciplina" />
 
-            <Button maxWidth="Infinity" minWidth="300.0" mnemonicParsing="false" prefHeight="40.0" style="-fx-background-color: #3498db, linear-gradient(#3498db, #2980b9); -fx-background-radius: 5; -fx-background-insets: 0; -fx-text-fill: white; -fx-font-weight: bold;" text="Cadastrar Professor" />
+            <Button fx:id="btnCadastrarProfessor" maxWidth="Infinity" minWidth="300.0" mnemonicParsing="false" onAction="#cadastrarProfessor" prefHeight="40.0" style="-fx-background-color: #3498db, linear-gradient(#3498db, #2980b9); -fx-background-radius: 5; -fx-background-insets: 0; -fx-text-fill: white; -fx-font-weight: bold;" text="Cadastrar Professor" />
 
             <Button maxWidth="Infinity" minWidth="300.0" mnemonicParsing="false" prefHeight="40.0" style="-fx-background-color: #3498db, linear-gradient(#3498db, #2980b9); -fx-background-radius: 5; -fx-background-insets: 0; -fx-text-fill: white; -fx-font-weight: bold;" text="Adicionar Nota/Falta" />
 

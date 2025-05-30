@@ -1,6 +1,5 @@
 package com.ads.projetoa3.app.controllers;
 
-
 import com.ads.projetoa3.app.models.Aluno;
 import com.ads.projetoa3.app.repositories.AlunoRepository;
 import javafx.fxml.FXML;
