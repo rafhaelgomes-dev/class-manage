@@ -9,8 +9,7 @@ import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 import java.util.ArrayList;
-
-import static com.ads.projetoa3.app.controllers.FormUtils.limparCampos;
+import static com.ads.projetoa3.app.utils.FormUtils.limparCampos;
 
 public class ProfessorController {
     @FXML
