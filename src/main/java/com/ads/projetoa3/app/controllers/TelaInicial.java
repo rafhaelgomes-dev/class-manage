@@ -25,6 +25,9 @@ public class TelaInicial {
     private Button btnCadastrarTurmas;
 
     @FXML
+    private Button btnAdicionarNotaFalta;
+
+    @FXML
     protected void cadastrarAluno() {
         try {
             Parent root = FXMLLoader.load(getClass().getResource("/com/ads/projetoa3/app/cadastro-aluno.fxml"));
@@ -98,6 +101,22 @@ public class TelaInicial {
             novaJanela.setScene(new Scene(root));
 
             novaJanela.initOwner(btnCadastrarTurmas.getScene().getWindow());
+
+            novaJanela.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+    @FXML
+    protected void adicionarNotaFalta() {
+        try {
+            Parent root = FXMLLoader.load(getClass().getResource("/com/ads/projetoa3/app/nota-falta.fxml"));
+
+            Stage novaJanela = new Stage();
+            novaJanela.setTitle("Adicionar Nota e Falta");
+            novaJanela.setScene(new Scene(root));
+
+            novaJanela.initOwner(btnAdicionarNotaFalta.getScene().getWindow());
 
             novaJanela.show();
         } catch (IOException e) {

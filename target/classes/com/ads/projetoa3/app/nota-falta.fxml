@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ads.projetoa3.app.controllers.AdicionarNotaFaltaCrontroller">
+    <center>
+        <VBox alignment="TOP_CENTER" spacing="20" style="-fx-padding: 20;">
+            <GridPane alignment="TOP_LEFT" hgap="10" vgap="10">
+                <padding><Insets bottom="10" left="10" right="10" top="10" /></padding>
+
+                <Label style="-fx-font-weight: bold;" text="Aluno:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                <ComboBox fx:id="alunoComboBox" prefWidth="300" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+
+                <Label style="-fx-font-weight: bold;" text="Disciplina:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                <ComboBox fx:id="disciplinaComboBox" prefWidth="300" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+                <Label style="-fx-font-weight: bold;" text="Nota:" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+                <TextField fx:id="colocarNota" prefWidth="100" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+
+                <Label style="-fx-font-weight: bold;" text="Faltas:" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+                <TextField fx:id="colocarFalta" prefWidth="100" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <columnConstraints>
+               <ColumnConstraints />
+               <ColumnConstraints />
+            </columnConstraints>
+            <rowConstraints>
+               <RowConstraints />
+               <RowConstraints />
+               <RowConstraints />
+               <RowConstraints />
+            </rowConstraints>
+            </GridPane>
+
+            <HBox alignment="CENTER" spacing="10">
+                <Button fx:id="adicionarBtn" defaultButton="true" style="-fx-text-fill: black; -fx-font-weight: bold;" text="Adicionar" />
+                <Button fx:id="limparBtn" style="-fx-text-fill: black; -fx-font-weight: bold;" text="Limpar" />
+            </HBox>
+            
+            <Label style="-fx-font-weight: bold; -fx-font-size: 16px;" text="Registros:" />
+            <TableView fx:id="registrosTable" prefHeight="200">
+                <columns>
+                    <TableColumn fx:id="alunoCol" prefWidth="150" text="Aluno" />
+                    <TableColumn fx:id="disciplinaCol" prefWidth="150" text="Disciplina" />
+                    <TableColumn fx:id="notaCol" prefWidth="80" text="Nota" />
+                    <TableColumn fx:id="faltasCol" prefWidth="80" text="Faltas" />
+                </columns>
+            </TableView>
+        </VBox>
+    </center>
+
+    <bottom>
+        <HBox alignment="CENTER_RIGHT" style="-fx-background-color: #f0f0f0; -fx-padding: 10;" />
+    </bottom>
+</BorderPane>

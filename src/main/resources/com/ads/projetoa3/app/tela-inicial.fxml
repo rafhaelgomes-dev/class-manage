@@ -45,7 +45,7 @@
 
             <Button fx:id="btnCadastrarTurmas" maxWidth="Infinity" minWidth="300.0" mnemonicParsing="false" onAction="#cadastrarTurmas" prefHeight="40.0" style="-fx-background-color: #3498db, linear-gradient(#3498db, #2980b9); -fx-background-radius: 5; -fx-background-insets: 0; -fx-text-fill: white; -fx-font-weight: bold;" text="Cadastrar Turmas" />
 
-            <Button maxWidth="Infinity" minWidth="300.0" mnemonicParsing="false" prefHeight="40.0" style="-fx-background-color: #3498db, linear-gradient(#3498db, #2980b9); -fx-background-radius: 5; -fx-background-insets: 0; -fx-text-fill: white; -fx-font-weight: bold;" text="Adicionar Nota/Falta" />
+            <Button fx:id="btnAdicionarNotaFalta" maxWidth="Infinity" minWidth="300.0" mnemonicParsing="false" onAction="#adicionarNotaFalta" prefHeight="40.0" style="-fx-background-color: #3498db, linear-gradient(#3498db, #2980b9); -fx-background-radius: 5; -fx-background-insets: 0; -fx-text-fill: white; -fx-font-weight: bold;" text="Adicionar Nota/Falta" />
         </VBox>
     </VBox>
 </AnchorPane>

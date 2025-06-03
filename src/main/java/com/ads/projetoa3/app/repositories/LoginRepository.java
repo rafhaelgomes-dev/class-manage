@@ -12,11 +12,11 @@ public class LoginRepository {
     }
 
     private static Professor getUsuario(String email, String senha) {
-        String senhaProfessor = "123456";
-        String emailProfessor = "rafhael@gmai.com";
+        String senhaProfessor = "admin123";
+        String emailProfessor = "admin@gmail.com";
 
         if (email.equals(emailProfessor)  && senha.equals(senhaProfessor)) {
-            return new Professor("Rafhael", "rafhael@gmail.com", "Java");
+            return new Professor("admin", "admin@gmail.com", "Java");
         }
 
         return null;

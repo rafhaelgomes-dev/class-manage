@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="526.0" prefWidth="600.0" style="-fx-background-color: #f5f5f5;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ads.projetoa3.app.controllers.TurmaController">
+<AnchorPane prefHeight="476.0" prefWidth="600.0" style="-fx-background-color: #f5f5f5;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ads.projetoa3.app.controllers.TurmaController">
     <children>
         <VBox alignment="CENTER" layoutX="163.0" layoutY="26.0" spacing="20.0">
             <children>
@@ -58,7 +58,7 @@
                 </VBox>
             </children>
         </VBox>
-        <Button defaultButton="true" layoutX="227.0" layoutY="453.0" mnemonicParsing="false" text="Salvar" />
-        <Button cancelButton="true" layoutX="342.0" layoutY="453.0" mnemonicParsing="false" text="Cancelar" />
+        <Button defaultButton="true" layoutX="214.0" layoutY="413.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="62.0" text="Salvar" />
+        <Button cancelButton="true" layoutX="348.0" layoutY="413.0" mnemonicParsing="false" text="Cancelar" />
     </children>
 </AnchorPane>
