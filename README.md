@@ -5,7 +5,7 @@ Resources
 
 # Login
 Usuário: admin@gmail.com
-Senha: admin
+Senha: admin123
 
 # Visão Geral
 
