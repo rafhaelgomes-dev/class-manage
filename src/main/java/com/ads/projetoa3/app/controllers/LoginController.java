@@ -5,10 +5,12 @@ import com.ads.projetoa3.app.repositories.LoginRepository;
 import com.ads.projetoa3.app.utils.MostrarAlerta;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.geometry.Pos;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
+import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
 import java.util.regex.Matcher;
@@ -44,6 +46,15 @@ public class LoginController {
     public void telaIncial() {
         try {
             Parent root = FXMLLoader.load(getClass().getResource("/com/ads/projetoa3/app/tela-inicial.fxml"));
+
+            root.lookupAll(".button").forEach(node -> {
+                if (node instanceof Button) {
+                    Button btn = (Button) node;
+                    btn.setMaxWidth(300);
+                    btn.setStyle(btn.getStyle() +
+                            " -fx-font-size: 14px; -fx-padding: 10 20; -fx-max-width: 300px;");
+                }
+            });
 
             Stage novaJanela = new Stage();
             novaJanela.setMaximized(true);

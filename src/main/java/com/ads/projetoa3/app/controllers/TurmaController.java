@@ -5,6 +5,7 @@ import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.TextField;
 import com.ads.projetoa3.app.models.Turmas;
 
+
 public class TurmaController {
     @FXML
     private TextField nomeTurmas;
@@ -13,6 +14,5 @@ public class TurmaController {
     private TextField periodoTurmas;
 
     @FXML
-    private ChoiceBox disciplinaTurmas;
-
+    private ChoiceBox<String> disciplinaTurmas;
 }
