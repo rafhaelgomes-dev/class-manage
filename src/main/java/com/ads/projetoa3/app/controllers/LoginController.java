@@ -5,12 +5,10 @@ import com.ads.projetoa3.app.repositories.LoginRepository;
 import com.ads.projetoa3.app.utils.MostrarAlerta;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
-import javafx.geometry.Pos;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
-import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
 import java.util.regex.Matcher;
