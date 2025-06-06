@@ -10,6 +10,7 @@ module com.ads.projetoa3.app {
     requires org.kordamp.bootstrapfx.core;
     requires eu.hansolo.tilesfx;
     requires com.almasb.fxgl.all;
+    requires java.sql;
 
     opens com.ads.projetoa3.app to javafx.fxml;
     opens com.ads.projetoa3.app.models to javafx.base;

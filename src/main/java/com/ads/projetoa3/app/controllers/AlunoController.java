@@ -25,6 +25,9 @@ public class AlunoController {
     @FXML
     private TextField curso;
 
+    @FXML
+    private TextField senha;
+
     private ArrayList<Aluno> alunosSelecionados = new ArrayList<>();
 
     @FXML
@@ -33,15 +36,16 @@ public class AlunoController {
         String getEmail = this.email.getText();
         String getMatricula = this.matricula.getText();
         String getCurso = this.curso.getText();
+        String getSenha = this.senha.getText();
 
-        if(getName.isEmpty() || getEmail.isEmpty() || getMatricula.isEmpty() || getCurso.isEmpty()) {
+        if(getName.isEmpty() || getEmail.isEmpty() || getMatricula.isEmpty() || getCurso.isEmpty() || getSenha.isEmpty()) {
             mostrarAlertaErro("Preencha todos os campos!");
             return;
         }
 
 
         Aluno aluno = new Aluno(getName, getEmail, getMatricula, getCurso);
-        AlunoRepository.saveAluno(aluno);
+        AlunoRepository.saveAluno(aluno, getSenha);
 
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setTitle("Operação Bem-Sucedida");
