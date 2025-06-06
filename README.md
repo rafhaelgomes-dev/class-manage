@@ -1,5 +1,10 @@
 # Class Manage
 
+# Como fazer a configuração inicial do banco de dados
+Passo 1: Coloque no arquivo propertie as credenciais do seu banco
+Passo 2: Crie no seu MYSQL um banco chamado "class-manage"
+Passo 3: Rode o arquivo que tem na raiz do projeto com o nome "init.sql"
+
 # Pasta que contem as telas
 Resources
 
