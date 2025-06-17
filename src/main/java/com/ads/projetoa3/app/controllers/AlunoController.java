@@ -76,7 +76,7 @@ public class AlunoController {
 
     @FXML
     protected void getAluno() {
-        ArrayList<Aluno> todosAlunos = AlunoRepository.getAlunos();
+        ArrayList<Aluno> todosAlunos = (ArrayList<Aluno>) AlunoRepository.getAlunos();
 
         if (todosAlunos.isEmpty()) {
             mostrarAlertaErro("Nenhum aluno encontrado.");

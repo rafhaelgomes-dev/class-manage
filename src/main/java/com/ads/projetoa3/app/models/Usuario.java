@@ -15,6 +15,9 @@ Usuario {
         this._tipoUsuario = tipoUsuario;
     }
 
+    public Usuario() {
+    }
+
     public String getNome() {
         return this._nome;
     }

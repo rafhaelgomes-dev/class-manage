@@ -15,7 +15,8 @@ public class Aluno extends Usuario {
         this._matricula = matricula;
         this._curso = curso;
     }
-
+    public Aluno() {
+    }
     public String getNome() {
         return this._nome;
     }

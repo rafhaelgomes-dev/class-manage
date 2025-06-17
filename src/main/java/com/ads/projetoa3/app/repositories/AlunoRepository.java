@@ -10,6 +10,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
+import java.util.List;
 
 public class AlunoRepository {
 
@@ -85,7 +86,43 @@ public class AlunoRepository {
         }
     }
 
-    public static ArrayList<Aluno> getAlunos() {
-    return alunos;
+    public static List<Aluno> getAlunos() {
+        String sql = "SELECT u.nome, u.email, a.matricula, a.curso " +
+                "FROM usuarios u " +
+                "JOIN alunos a ON u.id = a.usuario_id " +
+                "WHERE u.tipo_usuario = 'ALUNO'";
+
+        List<Aluno> alunos = new ArrayList<>();
+        Connection conexao = null;
+        PreparedStatement stmt = null;
+        ResultSet rs = null;
+
+        try {
+            conexao = db.getConnection();
+            stmt = conexao.prepareStatement(sql);
+            rs = stmt.executeQuery();
+
+            while (rs.next()) {
+                Aluno aluno = new Aluno();
+                aluno.setNome(rs.getString("nome"));
+                aluno.setEmail(rs.getString("email"));
+                aluno.setMatricula(rs.getString("matricula"));
+                aluno.setCurso(rs.getString("curso"));
+
+                alunos.add(aluno);
+            }
+        } catch (SQLException e) {
+            throw new RuntimeException("Erro ao buscar alunos: " + e.getMessage(), e);
+        } finally {
+            try {
+                if (rs != null) rs.close();
+                if (stmt != null) stmt.close();
+                if (conexao != null) conexao.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
+
+        return alunos;
     }
 }
